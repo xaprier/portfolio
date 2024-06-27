@@ -2,6 +2,7 @@ import { FALLBACK_IMAGE } from '../../constants';
 import { Profile } from '../../interfaces/profile';
 import { skeleton } from '../../utils';
 import LazyImage from '../lazy-image';
+import React from "react";
 
 interface AvatarCardProps {
   profile: Profile | null;
@@ -24,6 +25,16 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   avatarRing,
   resumeFileUrl,
 }): JSX.Element => {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
@@ -89,7 +100,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               download
               rel="noreferrer"
             >
-              Download Resume
+              See Resume
             </a>
           ))}
       </div>

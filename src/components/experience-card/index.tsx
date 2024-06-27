@@ -6,11 +6,13 @@ const ListItem = ({
   time,
   position,
   company,
+  type,
   companyLink,
 }: {
   time: React.ReactNode;
   position?: React.ReactNode;
   company?: React.ReactNode;
+  type?: React.ReactNode;
   companyLink?: string;
 }) => (
   <li className="mb-5 ml-4">
@@ -19,7 +21,7 @@ const ListItem = ({
       style={{ left: '-4.5px' }}
     ></div>
     <div className="my-0.5 text-xs">{time}</div>
-    <h3 className="font-semibold">{position}</h3>
+    <h3 className="font-semibold">{position} - {type}</h3>
     <div className="mb-4 font-normal">
       <a href={companyLink} target="_blank" rel="noreferrer">
         {company}
@@ -81,6 +83,7 @@ const ExperienceCard = ({
                     time={`${experience.from} - ${experience.to}`}
                     position={experience.position}
                     company={experience.company}
+                    type={experience.type}
                     companyLink={
                       experience.companyLink
                         ? experience.companyLink

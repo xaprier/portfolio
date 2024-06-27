@@ -75,6 +75,7 @@ export interface SanitizedExperience {
   from: string;
   to: string;
   companyLink?: string;
+  type?: string;
 }
 
 export interface SanitizedCertification {
@@ -89,6 +90,7 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+  gpa: string;
 }
 
 export interface SanitizedPublication {
