@@ -25,16 +25,6 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   avatarRing,
   resumeFileUrl,
 }): JSX.Element => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">

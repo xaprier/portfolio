@@ -47,9 +47,9 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
-    imageURL: '',
+    title: 'Portfolio of Seymen Kalkan',
+    description: 'This is the portfolio page of Seymen Kalkan. Developing C++, Qt projects and more.',
+    imageURL: 'https://avatars.githubusercontent.com/u/69122856?v=4',
   },
   social: {
     linkedin: 'xaprier',
