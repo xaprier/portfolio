@@ -4,6 +4,7 @@ const CONFIG = {
   github: {
     username: 'xaprier', 
   },
+  about: 'I\'m an experienced software developer with a strong background in C++, Linux and it\'s distributed operating systems. I specialize in Qt Core/GUI/Concurrent and am passionate about creating user-friendly interfaces. Additionally, I excel in developing optimized, high-performance applications.',
   base: '/portfolio/',
   projects: {
     github: {

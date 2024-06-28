@@ -7,6 +7,7 @@ import React from "react";
 interface AvatarCardProps {
   profile: Profile | null;
   loading: boolean;
+  about: string | undefined;
   avatarRing: boolean;
   resumeFileUrl?: string;
 }
@@ -15,6 +16,7 @@ interface AvatarCardProps {
  * Renders an AvatarCard component.
  * @param profile - The profile object.
  * @param loading - A boolean indicating if the profile is loading.
+ * @param about - A string indicating about section
  * @param avatarRing - A boolean indicating if the avatar should have a ring.
  * @param resumeFileUrl - The URL of the resume file.
  * @returns JSX element representing the AvatarCard.
@@ -22,6 +24,7 @@ interface AvatarCardProps {
 const AvatarCard: React.FC<AvatarCardProps> = ({
   profile,
   loading,
+  about,
   avatarRing,
   resumeFileUrl,
 }): JSX.Element => {
@@ -76,6 +79,11 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
           </div>
+        </div>
+        <div className="mt-3 text-center text-base-content text-opacity-60 font-mono">
+            {!loading && about && typeof about !== "undefined" ?
+              <div>{about}</div> : <div></div>
+            }
         </div>
         {resumeFileUrl &&
           (loading ? (

@@ -45,6 +45,7 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [error, setError] = useState<CustomError | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [about, setAbout] = useState<string>();
   const [githubProjects, setGithubProjects] = useState<GithubProject[]>([]);
 
   const getGithubProjects = useCallback(
@@ -119,6 +120,7 @@ const GitProfile = ({ config }: { config: Config }) => {
       }
 
       setGithubProjects(await getGithubProjects(data.public_repos));
+      setAbout(sanitizedConfig.about);
     } catch (error) {
       handleError(error as AxiosError | Error);
     } finally {
@@ -209,6 +211,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                     <AvatarCard
                       profile={profile}
                       loading={loading}
+                      about={about}
                       avatarRing={sanitizedConfig.themeConfig.displayAvatarRing}
                       resumeFileUrl={sanitizedConfig.resume.fileUrl}
                     />

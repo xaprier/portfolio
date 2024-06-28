@@ -365,6 +365,8 @@ interface Config {
    */
   base?: string;
 
+  about: string;
+
   /**
    * Projects config
    */
