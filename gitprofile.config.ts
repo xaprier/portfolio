@@ -10,10 +10,10 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 12, // How many projects to display.
+        limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed.
@@ -21,29 +21,20 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/hidamari', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
+      header: 'External Projects',
       projects: [
-        // {
-        //   title: 'Project Name',
-        //   description:
-        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://example.com',
-        // },
-        // {
-        //   title: 'Project Name',
-        //   description:
-        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://example.com',
-        // },
+        {
+          title: 'Medical Imaging System',
+          description:
+            'Developed a Medical Imaging System by creating a GUI application using Qt and implementing 3D visualization with VTK to work on NVIDIA Jetson embedded systems. Additionally assisted handling simple computer vision scenarios using OpenCV.',
+          imageUrl:
+            'https://www.medpointr.com/Content/images/logo-white.png',
+          link: 'https://www.medpointr.com/',
+        },
       ],
     },
   },
@@ -97,7 +88,7 @@ const CONFIG = {
       position: 'C++ Developer',
       from: 'May 2023',
       to: 'May 2024',
-      companyLink: '',
+      companyLink: 'https://www.medpointr.com/',
       type: 'Full Time'
     },
   ],

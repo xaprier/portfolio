@@ -80,7 +80,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               : profile.bio}
           </div>
         </div>
-        <div className="mt-3 text-center text-base-content text-opacity-60 font-mono">
+        <div className="m-5 text-center text-base-content text-opacity-60 font-mono">
             {!loading && about && typeof about !== "undefined" ?
               <div>{about}</div> : <div></div>
             }
