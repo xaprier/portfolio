@@ -223,6 +223,15 @@ interface Experience {
   companyLink?: string;
 }
 
+interface References {
+  name: string;
+  companies: string[];
+  positions: string[];
+  mail?: string;
+  phone?: string;
+  linkedin?: string;
+}
+
 interface Certification {
   body?: string;
   name?: string;
@@ -391,6 +400,11 @@ interface Config {
    * Experience list
    */
   experiences?: Array<Experience>;
+
+  /**
+   * Reference list
+   */
+  references?: Array<References>;
 
   /**
    * Certifications list

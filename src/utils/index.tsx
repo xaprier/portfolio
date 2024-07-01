@@ -95,6 +95,13 @@ export const getSanitizedConfig = (
             experience.from ||
             experience.to,
         ) || [],
+      references:
+        config?.references?.filter(
+          (reference) =>
+            reference.name ||
+            reference.companies ||
+            reference.positions
+        ) || [],
       certifications:
         config?.certifications?.filter(
           (certification) =>

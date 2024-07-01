@@ -78,6 +78,15 @@ export interface SanitizedExperience {
   type?: string;
 }
 
+export interface SanitizedReferences {
+  name: string;
+  positions: string[];
+  companies: string[];
+  phone?: string;
+  mail?: string;
+  linkedin?: string;
+}
+
 export interface SanitizedCertification {
   body?: string;
   name?: string;
@@ -146,6 +155,7 @@ export interface SanitizedConfig {
   resume: SanitizedResume;
   skills: Array<string>;
   experiences: Array<SanitizedExperience>;
+  references: Array<SanitizedReferences>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;
   publications: Array<SanitizedPublication>;

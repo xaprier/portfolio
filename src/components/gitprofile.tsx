@@ -30,6 +30,7 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import ReferenceCard from "./references-card";
 
 /**
  * Renders the GitProfile component.
@@ -231,6 +232,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                       <ExperienceCard
                         loading={loading}
                         experiences={sanitizedConfig.experiences}
+                      />
+                    )}
+                    {sanitizedConfig.references.length !== 0 && (
+                      <ReferenceCard
+                        loading={loading}
+                        references={sanitizedConfig.references}
                       />
                     )}
                     {sanitizedConfig.certifications.length !== 0 && (

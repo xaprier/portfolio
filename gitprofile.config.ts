@@ -21,7 +21,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/hidamari', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/hidamari', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. 
       },
     },
     external: {
@@ -34,6 +34,14 @@ const CONFIG = {
           imageUrl:
             'https://www.medpointr.com/Content/images/logo-white.png',
           link: 'https://www.medpointr.com/',
+        },
+        {
+          title: 'IB Fullstack Web App',
+          description:
+            'This is a website project that introduces IB schools and their IB private tutoring services. The platform aims to collect applications, providing a seamless experience for teachers, students, and administrators. In the background, the website features functions for teachers, students, and administrators to facilitate smooth operations. Wrote with ReactJS and PHP.',
+          imageUrl:
+            'https://ibeviankara.com/assets/favicon.991d56e5.ico',
+          link: 'https://ibeviankara.com/home',
         },
       ],
     },
@@ -62,7 +70,7 @@ const CONFIG = {
     skype: '',
     telegram: '',
     website: 'https://www.xaprier.dev',
-    phone: '',
+    phone: '+90 542 624 7634',
     email: 'seymenkalkan@gmail.com',
   },
   resume: {
@@ -90,6 +98,32 @@ const CONFIG = {
       to: 'May 2024',
       companyLink: 'https://www.medpointr.com/',
       type: 'Full Time'
+    },
+  ],
+  references: [
+    {
+      name: 'Ethem Bilgehan ÇİÇEK',
+      companies: ['BITES', 'MEDPOINTR'],
+      positions: ['Software Engineer', 'Founder'],
+      linkedin: 'https://www.linkedin.com/in/ethem-bilgehan-cicek-570393157/',
+      mail: 'ethem.cicek@medpointr.com',
+      phone: '',
+    },
+    {
+      name: 'Kaan Aykut KABAKÇI',
+      companies: ['ASELSAN'],
+      positions: ['Lead Engineer'],
+      linkedin: 'https://www.linkedin.com/in/kaanaykutkabakci/',
+      mail: 'kaanaykutkabakci@gmail.com',
+      phone: '',
+    },
+    {
+      name: 'Gökşin AKDENİZ',
+      companies: ['Eskisehir Technical University'],
+      positions: ['Lecturer'],
+      linkedin: 'https://www.linkedin.com/in/g%C3%B6k%C5%9Fin-akdeniz-1a845950/',
+      mail: 'goksina@eskisehir.edu.tr',
+      phone: '',
     },
   ],
   certifications: [
