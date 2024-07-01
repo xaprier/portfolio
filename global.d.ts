@@ -374,6 +374,11 @@ interface Config {
    */
   base?: string;
 
+  /**
+   * another avatar image url
+   */
+  avatar?: string;
+
   about: string;
 
   /**

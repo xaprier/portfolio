@@ -213,6 +213,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                       profile={profile}
                       loading={loading}
                       about={about}
+                      avatar={sanitizedConfig.avatar}
                       avatarRing={sanitizedConfig.themeConfig.displayAvatarRing}
                       resumeFileUrl={sanitizedConfig.resume.fileUrl}
                     />

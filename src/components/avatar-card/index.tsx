@@ -8,6 +8,7 @@ interface AvatarCardProps {
   profile: Profile | null;
   loading: boolean;
   about: string | undefined;
+  avatar: string | undefined;
   avatarRing: boolean;
   resumeFileUrl?: string;
 }
@@ -24,10 +25,12 @@ interface AvatarCardProps {
 const AvatarCard: React.FC<AvatarCardProps> = ({
   profile,
   loading,
+  avatar,
   about,
   avatarRing,
   resumeFileUrl,
 }): JSX.Element => {
+  console.log("avatar url: ", avatar);
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
@@ -52,7 +55,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             >
               {
                 <LazyImage
-                  src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
+                  src={avatar && avatar.length !== 0 ? avatar : (profile.avatar ? profile.avatar : FALLBACK_IMAGE)}
                   alt={profile.name}
                   placeholder={skeleton({
                     widthCls: 'w-full',

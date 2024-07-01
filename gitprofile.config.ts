@@ -5,6 +5,7 @@ const CONFIG = {
     username: 'xaprier', 
   },
   about: 'I\'m an experienced software developer with a strong background in C++, Linux and it\'s distributed operating systems. I specialize in Qt Core/GUI/Concurrent and am passionate about creating user-friendly interfaces. Additionally, I excel in developing optimized, high-performance applications.',
+  avatar: 'https://github.com/xaprier/portfolio/tree/build/avatar.jpeg', // use another avatar image instead of github avatar
   base: '/portfolio/',
   projects: {
     github: {
