@@ -30,7 +30,6 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   avatarRing,
   resumeFileUrl,
 }): JSX.Element => {
-  console.log("avatar url: ", avatar);
   return (
     <div className="card shadow-lg compact bg-base-100">
       <div className="grid place-items-center py-8">
