@@ -71,12 +71,12 @@ const CONFIG = {
     skype: '',
     telegram: '',
     website: 'https://www.xaprier.dev',
-    phone: '+90 542 624 7634',
+    phone: '',
     email: 'seymenkalkan@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://raw.githubusercontent.com/xaprier/xaprier.github.io/86aa24aa7fe2e6b146b4c04d1922d6a43ae2fbaf/uploads/my-cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'C++',
