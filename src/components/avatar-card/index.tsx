@@ -46,11 +46,10 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
         ) : (
           <div className="avatar opacity-90">
             <div
-              className={`mb-8 rounded-full w-32 h-32 ${
-                avatarRing
-                  ? 'ring ring-primary ring-offset-base-100 ring-offset-2'
-                  : ''
-              }`}
+              className={`mb-8 rounded-full w-32 h-32 ${avatarRing
+                ? 'ring ring-primary ring-offset-base-100 ring-offset-2'
+                : ''
+                }`}
             >
               {
                 <LazyImage
@@ -71,21 +70,26 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             {loading || !profile ? (
               skeleton({ widthCls: 'w-48', heightCls: 'h-8' })
             ) : (
-              <span className="text-base-content opacity-70">
-                {profile.name}
-              </span>
+              <div className="text-center">
+                <div className="text-base-content text-opacity-50 text-xl">
+                  {profile.username}
+                </div>
+                <div className="text-base-content opacity-70">
+                  {profile.name}
+                </div>
+              </div>
             )}
           </h5>
-          <div className="mt-3 text-base-content text-opacity-60 font-mono">
+          <div className="mt-2 text-base-content text-opacity-60 font-mono">
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
               : profile.bio}
           </div>
         </div>
         <div className="m-5 text-center text-base-content text-opacity-60 font-mono">
-            {!loading && about && typeof about !== "undefined" ?
-              <div>{about}</div> : <div></div>
-            }
+          {!loading && about && typeof about !== "undefined" ?
+            <div>{about}</div> : <div></div>
+          }
         </div>
         {resumeFileUrl &&
           (loading ? (
