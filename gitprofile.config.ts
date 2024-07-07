@@ -22,7 +22,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/hidamari', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. 
+        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/qt-password-manager', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. 
       },
     },
     external: {
