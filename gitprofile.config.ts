@@ -13,7 +13,7 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
@@ -22,7 +22,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/qt-nbc', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/qt-password-manager', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'  ], // List of repository names to display. 
+        projects: [ 'xaprier/XPwm', 'xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/XNBC', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'], // List of repository names to display. 
       },
     },
     external: {
@@ -142,6 +142,13 @@ const CONFIG = {
       from: '2021',
       to: '2023',
       gpa: '3.89'
+    },
+    {
+      institution: 'Ataturk University',
+      degree: 'Computer Engineering',
+      from: '2024',
+      to: 'Current',
+      gpa: ''
     },
   ],
   publications: [

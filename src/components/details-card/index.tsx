@@ -22,7 +22,7 @@ import {
 import { FaSquareThreads } from 'react-icons/fa6';
 import { MdLocationOn } from 'react-icons/md';
 import { RiMailFill, RiPhoneFill } from 'react-icons/ri';
-import { SiResearchgate, SiTwitter, SiUdemy } from 'react-icons/si';
+import { SiResearchgate, SiUdemy, SiX } from 'react-icons/si';
 import { Profile } from '../../interfaces/profile';
 import {
   SanitizedGithub,
@@ -71,9 +71,8 @@ const ListItem: React.FC<{
         {icon} {title}
       </div>
       <div
-        className={`${
-          skeleton ? 'flex-grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
+        className={`${skeleton ? 'flex-grow' : ''
+          } text-sm font-normal text-right mr-2 ml-3 ${link ? 'truncate' : ''}`}
         style={{
           wordBreak: 'break-word',
         }}
@@ -129,9 +128,8 @@ const OrganizationItem: React.FC<{
         {icon} {title}
       </div>
       <div
-        className={`${
-          skeleton ? 'flex-grow' : ''
-        } text-sm font-normal text-right mr-2 ml-3 space-x-2 ${link ? 'truncate' : ''}`}
+        className={`${skeleton ? 'flex-grow' : ''
+          } text-sm font-normal text-right mr-2 ml-3 space-x-2 ${link ? 'truncate' : ''}`}
         style={{
           wordBreak: 'break-word',
         }}
@@ -212,8 +210,8 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
               )}
               {social?.twitter && (
                 <ListItem
-                  icon={<SiTwitter />}
-                  title="Twitter:"
+                  icon={<SiX />}
+                  title="Twitter(X):"
                   value={social.twitter}
                   link={`https://twitter.com/${social.twitter}`}
                 />
