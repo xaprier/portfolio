@@ -2,10 +2,12 @@
 
 const CONFIG = {
   github: {
-    username: 'xaprier', 
+    username: 'xaprier',
   },
-  about: 'I\'m an experienced software developer with a strong background in C++, Linux and it\'s distributed operating systems. I specialize in Qt Core/GUI/Concurrent and am passionate about creating user-friendly interfaces. Additionally, I excel in developing optimized, high-performance applications.',
-  avatar: 'https://github.com/xaprier/portfolio/blob/build/avatar.jpeg?raw=true', // use another avatar image instead of github avatar
+  about:
+    "I'm an experienced software developer with a strong background in C++, Linux and it's distributed operating systems. I specialize in Qt Core/GUI/Concurrent and am passionate about creating user-friendly interfaces. Additionally, I excel in developing optimized, high-performance applications.",
+  avatar:
+    'https://github.com/xaprier/portfolio/blob/build/avatar.jpeg?raw=true', // use another avatar image instead of github avatar
   base: '/portfolio/',
   projects: {
     github: {
@@ -22,7 +24,20 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: [ 'xaprier/XPwm', 'xaprier/actions-semver', 'xaprier/XQProgressBar', 'xaprier/logger', 'xaprier/tester', 'xaprier/XNBC', 'xaprier/qt-notepad', 'xaprier/methods-smart', 'xaprier/nasm-calculator', 'xaprier/gaiacraft-discord-bot'], // List of repository names to display. 
+        projects: [
+          'xaprier/XPwm',
+          'xaprier/XQWidgetComposer',
+          'xaprier/XQPwdLineEdit',
+          'xaprier/XQCircularLoadingIndicator',
+          'xaprier/XNBC',
+          'xaprier/actions-semver',
+          'xaprier/logger',
+          'xaprier/tester',
+          'xaprier/qt-notepad',
+          'xaprier/methods-smart',
+          'xaprier/nasm-calculator',
+          'xaprier/gaiacraft-discord-bot',
+        ], // List of repository names to display.
       },
     },
     external: {
@@ -32,16 +47,14 @@ const CONFIG = {
           title: 'Medical Imaging System',
           description:
             'Developed a Medical Imaging System by creating a GUI application using Qt and implementing 3D visualization with VTK to work on NVIDIA Jetson embedded systems. Additionally assisted handling simple computer vision scenarios using OpenCV.',
-          imageUrl:
-            'https://www.medpointr.com/Content/images/logo-white.png',
+          imageUrl: 'https://www.medpointr.com/Content/images/logo-white.png',
           link: 'https://www.medpointr.com/',
         },
         {
           title: 'IB Fullstack Web App',
           description:
             'This is a website project that introduces IB schools and their IB private tutoring services. The platform aims to collect applications, providing a seamless experience for teachers, students, and administrators. In the background, the website features functions for teachers, students, and administrators to facilitate smooth operations. Wrote with ReactJS and PHP.',
-          imageUrl:
-            'https://ibeviankara.com/assets/favicon.991d56e5.ico',
+          imageUrl: 'https://ibeviankara.com/assets/favicon.991d56e5.ico',
           link: 'https://ibeviankara.com/home',
         },
       ],
@@ -49,7 +62,8 @@ const CONFIG = {
   },
   seo: {
     title: 'Portfolio of Seymen Kalkan',
-    description: 'This is the portfolio page of Seymen Kalkan. Developing C++, Qt projects and more.',
+    description:
+      'This is the portfolio page of Seymen Kalkan. Developing C++, Qt projects and more.',
     imageURL: 'https://avatars.githubusercontent.com/u/69122856?v=4',
   },
   social: {
@@ -75,8 +89,7 @@ const CONFIG = {
     email: 'seymenkalkan@gmail.com',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'C++',
@@ -98,7 +111,7 @@ const CONFIG = {
       from: 'May 2023',
       to: 'May 2024',
       companyLink: 'https://www.medpointr.com/',
-      type: 'Full Time'
+      type: 'Full Time',
     },
   ],
   references: [
@@ -122,7 +135,8 @@ const CONFIG = {
       name: 'Gökşin AKDENİZ',
       companies: ['Eskisehir Technical University'],
       positions: ['Lecturer'],
-      linkedin: 'https://www.linkedin.com/in/g%C3%B6k%C5%9Fin-akdeniz-1a845950/',
+      linkedin:
+        'https://www.linkedin.com/in/g%C3%B6k%C5%9Fin-akdeniz-1a845950/',
       mail: 'goksina@eskisehir.edu.tr',
       phone: '',
     },
@@ -141,14 +155,14 @@ const CONFIG = {
       degree: 'Computer Programming',
       from: '2021',
       to: '2023',
-      gpa: '3.89'
+      gpa: '3.89',
     },
     {
       institution: 'Ataturk University',
       degree: 'Computer Engineering',
       from: '2024',
       to: 'Current',
-      gpa: ''
+      gpa: '',
     },
   ],
   publications: [
